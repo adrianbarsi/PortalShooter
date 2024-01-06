@@ -1,0 +1,24 @@
+Need to shoot portals in sequence but shooting will go through enemies all the way to the end of the map and if you hit a portal out of order you lose. If you get hit you also lose. Also if you shoot through a portal it will come out of the next square in the sequence. When all are shot down the last numbered square will glow green. Then that will take you to the next room and things will slowly get harder and harder. Maybe show room number in top left. Also make sure that portals don't spawn where the player spawns. Use arena allocator to allocate memory and then free it at the end of the room. If you shoot yourself you die. The player dies if they shot an already completed portal. Clearing last portal will not cause enemies to die but will make them stop spawning. Player can't teleport through portals, if they touch one they will die unless it is green. It being cramped is a good thing. Can have different types of portals later. Stationary turrent which shoots in a random direction. Projectile is long and you can shoot it down. It should be in the middle of the Room and projectiles kill the player as well. Also should slowly wind up shot. The shot should grow like snake. Also enemies that run towards the player. Intentionally no tutorial to let them figure it out. Portal becomes red when hit incorrectly. Shooting delay is not needed because shooting a lot is suboptimal anyways.
+
+Deal with 8 cases of teleportation as seen in diagram
+
+position should maybe just be x and y
+
+Extract out Portal into another file
+
+SEQUENCE_LENGTH and ROOM_DIMENSION should be dynamic.
+ROOM_DIMENSION should generate ROOM_X_STEP and ROOM_Y_STEP.
+Also portals and basically everything that can be should be.
+
+Add sound effects and music
+
+Setup portal teleportation
+
+If they touch anything they die
+
+Game over screen still shows game state behind it with lower opacity
+
+
+Maybe enemies will move from tile to tile to simplify things? I think it is better to keep the concept of the generic tile because it makes more sense conceptually.
+
+Create scopedSafeNewDefault, and scopedSafeNew in helpers

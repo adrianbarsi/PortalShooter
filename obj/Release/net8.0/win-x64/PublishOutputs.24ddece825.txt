@@ -1,0 +1,3 @@
+C:\Users\Adrian\Documents\PortalShooter\bin\Release\net8.0\win-x64\publish\PortalShooter.exe
+C:\Users\Adrian\Documents\PortalShooter\bin\Release\net8.0\win-x64\publish\PortalShooter.pdb
+C:\Users\Adrian\Documents\PortalShooter\bin\Release\net8.0\win-x64\publish\raylib.dll
